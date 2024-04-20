@@ -1,0 +1,22 @@
+# mykivy.kv
+<MainLayout>:
+    orientation: 'vertical'
+    BoxLayout:
+        size_hint_y: None
+        height: '48dp'
+        Label:
+            text: 'User ID:'
+        TextInput:
+            id: user_id_input
+            hint_text: 'Enter user ID'
+    BoxLayout:
+        size_hint_y: None
+        height: '48dp'
+        Label:
+            text: 'User Name:'
+        TextInput:
+            id: user_name_input
+            hint_text: 'Enter user name'
+    Button:
+        text: 'Start'
+        on_press: root.start()
